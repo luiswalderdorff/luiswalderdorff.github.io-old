@@ -4,9 +4,12 @@
   align-items: center;
   margin-top: 0;
   padding-bottom: 25px;
+  @include tablet {
+    padding-bottom: 0;
+  }
 }
 
-.first-line h2 {
+.name {
   margin: 0 auto;
   display: block;
   padding: 25px 0;
@@ -25,9 +28,17 @@
 .second-line {
   text-align: center;
   padding-top: 30px;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .main-nav ul {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .project {
@@ -35,6 +46,20 @@
 }
 
 // Main
+
+#main-content {
+  border-bottom: 1px solid grey;
+}
+
+.projects {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .projects div {
   width: 90%;
@@ -49,6 +74,7 @@ body {
 // Footer
 
 footer {
+  padding-top: 30px;
   width: 90%;
   margin: 0 auto;
 }
