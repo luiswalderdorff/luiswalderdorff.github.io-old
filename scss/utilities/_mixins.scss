@@ -1,0 +1,48 @@
+
+// Media Queries
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+// Flexbox Settings
+@mixin flexy(
+  $disp: flex,
+  $dir: row,
+  $wrap: wrap,
+  $just: space-between){
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+
+
+// Rounded Corners
+
+@mixin rounded {
+  border-radius: 8px;
+}
+
+// buttons
+
+@mixin button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+}
+
+// grid col
+
+@mixin gridcol {
+  padding-left: 15px;
+}

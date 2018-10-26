@@ -1,0 +1,58 @@
+.main-nav {
+  width: 33%;
+  margin-right: 5%;
+  background: black;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+// Links
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: rgba(255,255,255, 0.5);
+  text-transform: uppercase;
+  &:hover {
+    color: white;
+  }
+  &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    // top: 0;
+    transition: all ease-in-out 250ms;
+
+  }
+  // Animation under nav links
+  &:hover::after{
+    width: 100%;
+  }
+}
+
+
+nav li {
+  position: relative;
+}
+
+
+
+.active {
+  color: white !important;
+}
+ .first-line {
+   background-color: black;
+ }

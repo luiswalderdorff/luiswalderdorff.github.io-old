@@ -1,0 +1,20 @@
+// Header
+
+.first-line {
+  @include flexy;
+  align-items: center;
+  margin-top: 0;
+}
+
+.second-line {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.main-nav ul {
+  @include flexy;
+}
+
+.project {
+  text-align: center;
+}

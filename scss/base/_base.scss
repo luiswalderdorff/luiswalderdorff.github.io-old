@@ -1,0 +1,37 @@
+body {
+  background: $primary-background;
+  font-family: 'Old Standard TT', serif;
+}
+
+header {
+  background-image: linear-gradient(to bottom right, #537895 0%, #09203f 74%);
+  color: white;
+  padding-bottom: 50px;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+// Arrows
+
+/* Arrow common style */
+
+.arrows {
+  text-align: center;
+}
+.arrow-bottom {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(135deg);
+  transition: border-top 0.75s, border-right 0.75s;
+}
+
+.arrow-bottom:hover {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
