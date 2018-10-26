@@ -1,9 +1,25 @@
 // Header
 
 .first-line {
-  @include flexy;
   align-items: center;
   margin-top: 0;
+  padding-bottom: 25px;
+}
+
+.first-line h2 {
+  margin: 0 auto;
+  display: block;
+  padding: 25px 0;
+}
+
+.first-line .main-nav {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.nav-list {
+  padding: 0;
 }
 
 .second-line {
@@ -12,9 +28,37 @@
 }
 
 .main-nav ul {
-  @include flexy;
 }
 
 .project {
   text-align: center;
+}
+
+// Main
+
+.projects div {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+body {
+  text-align: center;
+}
+
+// Footer
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-footer a {
+  text-decoration: none;
+  color: black;
 }

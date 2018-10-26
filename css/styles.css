@@ -1,22 +1,20 @@
 body {
-  background: #659DBD;
+  background: white;
   font-family: 'Old Standard TT', serif; }
 
 header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#537895), color-stop(74%, #09203f));
-  background-image: -webkit-linear-gradient(top left, #537895 0%, #09203f 74%);
-  background-image: -o-linear-gradient(top left, #537895 0%, #09203f 74%);
-  background-image: linear-gradient(to bottom right, #537895 0%, #09203f 74%);
+  background-color: grey;
   color: white;
-  padding-bottom: 50px;
-  height: 100vh; }
+  padding-bottom: 50px; }
 
 ul {
   list-style: none; }
 
 /* Arrow common style */
 .arrows {
-  text-align: center; }
+  text-align: center;
+  display: block;
+  padding: 0; }
 
 .arrow-bottom {
   display: inline-block;
@@ -31,52 +29,69 @@ ul {
   -o-transition: border-top 0.75s, border-right 0.75s;
   transition: border-top 0.75s, border-right 0.75s; }
 
-.arrow-bottom:hover {
+.second-line .arrow-bottom:hover {
   border-top: 2px solid white;
   border-right: 2px solid white; }
 
 .first-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0; }
+  margin-top: 0;
+  padding-bottom: 25px; }
+
+.first-line h2 {
+  margin: 0 auto;
+  display: block;
+  padding: 25px 0; }
+
+.first-line .main-nav {
+  margin: auto;
+  display: block;
+  width: 100%; }
+
+.nav-list {
+  padding: 0; }
 
 .second-line {
   text-align: center;
   padding-top: 30px; }
 
-.main-nav ul {
+.project {
+  text-align: center; }
+
+.projects div {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px; }
+
+body {
+  text-align: center; }
+
+footer {
+  width: 90%;
+  margin: 0 auto; }
+
+.bottom-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.project {
-  text-align: center; }
+.bottom-footer a {
+  text-decoration: none;
+  color: black; }
 
 .profile-pic {
   border-radius: 50%;
   height: 200px;
+  margin: 0 auto; }
+
+.projects img {
+  width: 100%;
+  display: block;
   margin: 0 auto; }
 
 .main-nav {

@@ -1,13 +1,14 @@
 body {
-  background: $primary-background;
+  background: white;
   font-family: 'Old Standard TT', serif;
 }
 
 header {
-  background-image: linear-gradient(to bottom right, #537895 0%, #09203f 74%);
+  // background-image: linear-gradient(to bottom right, #537895 0%, #09203f 74%);
+  background-color: grey;
   color: white;
   padding-bottom: 50px;
-  height: 100vh;
+  // height: 100vh;
 }
 
 ul {
@@ -20,6 +21,8 @@ ul {
 
 .arrows {
   text-align: center;
+  display: block;
+  padding: 0;
 }
 .arrow-bottom {
   display: inline-block;
@@ -31,7 +34,24 @@ ul {
   transition: border-top 0.75s, border-right 0.75s;
 }
 
-.arrow-bottom:hover {
+.second-line .arrow-bottom:hover {
   border-top: 2px solid white;
   border-right: 2px solid white;
 }
+
+// grow on click (brekas arrow)
+
+// @keyframes wiggle {
+//   0% {transform: scale(1);}
+//   50% {transform: scale(1.5);}
+//   90% {transform: scale(0.9);}
+//   100% {transform: scale(1);}
+// }
+//
+// .arrow-bottom:active {
+//   animation: wiggle 1s;
+// }
+
+
+
+// Besseren feedback for sie beim clicken erstellen, auf schwarzem hintergrund
