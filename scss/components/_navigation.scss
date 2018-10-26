@@ -1,11 +1,13 @@
 .main-nav {
   width: 33%;
   margin-right: 5%;
-  background: black;
 }
 
 .nav-list li {
   padding-bottom: 20px;
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
 
 
@@ -26,7 +28,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
-  color: rgba(255,255,255, 0.5);
+  color: #f2f2f2;
   text-transform: uppercase;
   &:hover {
     color: white;
@@ -58,6 +60,3 @@ nav li {
 .active {
   color: white !important;
 }
- .first-line {
-   background-color: black;
- }

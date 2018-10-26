@@ -2,10 +2,16 @@
 
 .first-line {
   align-items: center;
-  margin-top: 0;
+  margin: 0;
   padding-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
   @include tablet {
     padding-bottom: 0;
+  }
+  @include desktop {
+    display: flex;
+    height: 10vh;
+    padding: 0 5%;
   }
 }
 
@@ -13,31 +19,52 @@
   margin: 0 auto;
   display: block;
   padding: 25px 0;
+  @include desktop {
+    flex-basis: 50%;
+    text-align: left;
+    flex-basis: 33%;
+  }
 }
 
 .first-line .main-nav {
   margin: auto;
   display: block;
   width: 100%;
+  @include desktop {
+    flex-basis: 50%;
+  }
 }
 
 .nav-list {
   padding: 0;
+  margin: 0;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include desktop {
+    // margin-left: 20%;
+    // margin-right: 5%;
+  }
 }
 
 .second-line {
   text-align: center;
   padding-top: 30px;
+  p {
+    padding: 10px;
+    line-height: 2;
+  }
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.main-nav ul {
-  @include tablet {
-    display: flex;
-    justify-content: space-around;
+    grid-template-columns: 1fr 2fr;
+    height: 90vh;
+    align-items: center;
+    p {
+      text-align: left;
+      margin-right: 10%;
+      padding: 30px;
+    }
   }
 }
 
@@ -48,13 +75,19 @@
 // Main
 
 #main-content {
+  padding-bottom: 30px;
   border-bottom: 1px solid grey;
+}
+
+#portfolio {
+  padding: 25px 0 10px 0;
 }
 
 .projects {
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
   @include desktop {
     grid-template-columns: repeat(3, 1fr);
@@ -75,8 +108,12 @@ body {
 
 footer {
   padding-top: 30px;
-  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: 0 auto;
+}
+
+.upper-footer {
 }
 
 .bottom-footer {
@@ -86,5 +123,4 @@ footer {
 
 .bottom-footer a {
   text-decoration: none;
-  color: black;
 }

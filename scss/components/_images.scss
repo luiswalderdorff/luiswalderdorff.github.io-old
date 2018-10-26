@@ -1,12 +1,17 @@
 .profile-pic {
   border-radius: 50%;
-  height: 200px;
+  width: 70%;
   margin: 0 auto;
-
 }
 
 .projects img {
   width: 100%;;
   display: block;
   margin: 0 auto;
+}
+
+.project-images {
+  border-radius: 5px;
+  border: 1px grey solid;
+  box-shadow: 0 8px 6px -6px black;
 }
