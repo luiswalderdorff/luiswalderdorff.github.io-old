@@ -16,22 +16,21 @@
             <ul class="nav-list">
                 <li class="active"><a class="scroll" href="#top">Home</a></li>
                 <li><a class="scroll" href="#portfolio">Portfolio</a></li>
-                <li><a class="scroll" href="#future-projects">Future</a></li>
                 <li><a class="scroll" href="#contact">Contact</a></li>
             </ul>
         </nav>
       </div>
       <div class="second-line">
-        <img alt="Picture of me" src="images/profile-pic.jpeg" class="profile-pic" />
         <p>
           Hi! My name is Luis and I'm a front-end developer, who recently finished a degree
           in front-end web development at Treehouse. I study Cultural Anthropology at the
           Goethe University in Frankfurt and learn how to code in my free time. My skills
           right now include: HTML5, CSS, SASS, JavaScript and JQuery.
         </p>
-        <ul class="arrows">
+        <img alt="Picture of me" src="images/profile-pic.jpeg" class="profile-pic" />
+        <div class="arrows">
           <a class="scroll" href="#main-content"><span class="arrow-bottom"></span></a>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -39,6 +38,10 @@
 
       <div class="portfolio">
         <h3 id="portfolio">Portfolio</h3>
+      </div>
+
+      <div class="searchbar">
+        <input type="text" placeholder="Filter Projects..." id="search" onkeyup="searchBox()">
       </div>
 
       <div class="projects">
@@ -49,11 +52,11 @@
           </a>
           <p><strong>Form Project</strong></p>
           <p>
-            A simple online registration form I made.
+            A simple online registration form I made with HTML and CSS.
           </p>
-          <ul class="arrows">
+          <div class="arrows">
             <a class="scroll" href="#gallery-project"><span class="arrow-bottom"></span></a>
-          </ul>
+          </div>
         </div>
 
         <div id="gallery-project">
@@ -64,9 +67,9 @@
           <p>
             A picture gallery with a JQuery lightbox and a JavaScript searchbar.
           </p>
-          <ul class="arrows">
+          <div class="arrows">
             <a class="scroll" href="#wheel-project"><span class="arrow-bottom"></span></a>
-          </ul>
+          </div>
         </div>
 
         <div id="wheel-project">
@@ -77,9 +80,9 @@
           <p>
             A browser version of the word guessing game "Wheel of Success", using JavaScript.
           </p>
-          <ul class="arrows">
+          <div class="arrows">
             <a class="scroll" href="#dashboard-project"><span class="arrow-bottom"></span></a>
-          </ul>
+          </div>
         </div>
 
         <div id="dashboard-project">
@@ -88,11 +91,11 @@
           </a>
           <p><strong>Webapp Dashboard</strong></p>
           <p>
-            A interactive dashboard for a web application, using SVG graphics and JavaScript programming.
+            A interactive dashboard for a web application, using CSS Grid, SVG graphics and JavaScript programming.
           </p>
-          <ul class="arrows">
+          <div class="arrows">
             <a class="scroll" href="#api-project"><span class="arrow-bottom"></span></a>
-          </ul>
+          </div>
         </div>
 
         <div id="api-project">
@@ -101,18 +104,18 @@
           </a>
           <p><strong>Employee Directory</strong></p>
           <p>
-            A Employee Directory, which uses JavaScript to pull its information from a third-party API.
+            A Employee Directory, which uses JavaScript to pull its information from a third-party API and has lightboxes, for more detailed information.
           </p>
-          <ul class="arrows">
+          <div class="arrows">
             <a class="scroll" href="#coming-soon"><span class="arrow-bottom"></span></a>
-          </ul>
+          </div>
         </div>
 
 
         <div id="coming-soon">
-          <h2>Coming Soon...</h2>
+          <p><strong>Coming Soon...</strong></p>
           <p>
-           Add text...
+           I will update this page periodically with new projects I am working on.
           </p>
         </div>
       </div>
@@ -125,14 +128,17 @@
         <p>
           If you have any questions, feel free to contact me!
         </p>
-        <p><b>Email</b>   walderdorff.luis@gmail.com</p>
+        <p><b>Email:</b> walderdorff.luis@gmail.com</p>
+        <div class="contact-icons">
+          <a href="https://github.com/luiswalderdorff" target="_blank"><img src="images/github-1.svg" alt="A github SVG" /></a>
+          <a href="https://www.linkedin.com/in/luis-walderdorff-564650163/" target="_blank"><img src="images/linkedin-4.svg" alt="A linkedin SVG" /></a>
+        </div>
       </div>
       <div class="bottom-footer">
         <p id="LW"><b>Luis Walderdorff</b></p>
         <p id="btt"><b><a href="#top" class="scroll">BACK TO TOP</a></b></p>
       </div>
     </footer>
-    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
   </body>

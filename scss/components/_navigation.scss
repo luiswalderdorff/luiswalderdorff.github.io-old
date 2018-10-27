@@ -4,23 +4,9 @@
 }
 
 .nav-list li {
-  padding-bottom: 20px;
   @include desktop {
     padding-bottom: 0;
   }
-}
-
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
 }
 
 // Links
@@ -44,6 +30,17 @@ nav a {
     transition: all ease-in-out 250ms;
 
   }
+  &.active {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    // top: 0;
+    transition: all ease-in-out 250ms;
+
+  }
   // Animation under nav links
   &:hover::after{
     width: 100%;
@@ -53,10 +50,4 @@ nav a {
 
 nav li {
   position: relative;
-}
-
-
-
-.active {
-  color: white !important;
 }

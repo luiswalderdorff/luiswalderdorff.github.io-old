@@ -6,12 +6,12 @@
   padding-bottom: 25px;
   background-color: rgba(0, 0, 0, 0.3);
   @include tablet {
-    padding-bottom: 0;
+    padding: 0 5%;
   }
   @include desktop {
     display: flex;
     height: 10vh;
-    padding: 0 5%;
+    justify-content: space-between;
   }
 }
 
@@ -19,10 +19,11 @@
   margin: 0 auto;
   display: block;
   padding: 25px 0;
+  @include tablet {
+    padding-right: 30px;
+  }
   @include desktop {
-    flex-basis: 50%;
-    text-align: left;
-    flex-basis: 33%;
+    flex-basis: 75%;
   }
 }
 
@@ -31,20 +32,34 @@
   display: block;
   width: 100%;
   @include desktop {
-    flex-basis: 50%;
+    flex-basis: 25%;
+    // margin-right: 10%;
   }
 }
 
+
 .nav-list {
-  padding: 0;
+  padding: 0 5%;
   margin: 0;
+  li {
+    border: solid grey 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 10px
+  }
   @include tablet {
     display: flex;
     justify-content: space-between;
+    align-self: flex-end;
+
+    li {
+    border: none;
+    padding: 0;
+
+  }
   }
   @include desktop {
-    // margin-left: 20%;
-    // margin-right: 5%;
+    padding-left: 0;
   }
 }
 
@@ -57,9 +72,10 @@
   }
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     height: 90vh;
     align-items: center;
+    margin: 0 5%;
     p {
       text-align: left;
       margin-right: 10%;
@@ -73,10 +89,20 @@
 }
 
 // Main
+.searchbar {
+  margin-bottom: 25px;
+  input {
+  width: 25%;
+  }
+}
+
+
 
 #main-content {
   padding-bottom: 30px;
   border-bottom: 1px solid grey;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #f2f2f2;
 }
 
 #portfolio {
@@ -116,6 +142,10 @@ footer {
 .upper-footer {
 }
 
+.contact-icons {
+
+}
+
 .bottom-footer {
   display: flex;
   justify-content: space-between;
@@ -123,4 +153,8 @@ footer {
 
 .bottom-footer a {
   text-decoration: none;
+}
+
+#btt a {
+  color: rgba(0, 0, 0, 0.3);
 }

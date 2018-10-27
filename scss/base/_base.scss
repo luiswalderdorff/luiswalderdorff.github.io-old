@@ -21,7 +21,7 @@ ul {
 .arrows {
   text-align: center;
   display: block;
-  padding: 0;
+  padding: 15px;
   @include tablet {
     grid-column: 1 / 3;
   }
@@ -33,33 +33,29 @@ ul {
   border-top: 2px solid #000;
   border-right: 2px solid #000;
   transform: rotate(135deg);
-  transition: border-top 0.75s, border-right 0.75s;
+  transition: 1s;
 }
 
-.second-line .arrow-bottom:hover {
-  border-top: 2px solid white;
-  border-right: 2px solid white;
+.arrow-bottom:hover {
+  transform: scale(1.2) rotate(135deg);
 }
+
 
 #main-content .arrows {
+  .arrow-bottom {
+    border-top: 2px solid #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+  }
   @include tablet {
     display: none;
   }
 }
 
-// grow on click (brekas arrow)
+.contact-icons img {
+  opacity: 0.5;
+  transition: opacity 0.8s;
+}
 
-// @keyframes wiggle {
-//   0% {transform: scale(1);}
-//   50% {transform: scale(1.5);}
-//   90% {transform: scale(0.9);}
-//   100% {transform: scale(1);}
-// }
-//
-// .arrow-bottom:active {
-//   animation: wiggle 1s;
-// }
-
-
-
-// Besseren feedback for sie beim clicken erstellen, auf schwarzem hintergrund
+.contact-icons img:hover {
+  opacity: 1;
+}
