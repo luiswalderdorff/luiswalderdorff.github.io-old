@@ -56,6 +56,11 @@ ul {
 nav a {
   display: block; }
 
+#search {
+  border: black 0px solid;
+  border-radius: 10px;
+  padding: 4px 10px; }
+
 .first-line {
   -webkit-box-align: center;
   -ms-flex-align: center;

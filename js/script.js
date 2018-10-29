@@ -13,23 +13,23 @@ $scrollLink.click(function(event) {
 
 function searchBox () {
 	// Declare variables
-	var input, filter, users, user, picture, i;
+	var input, filter, projects, project, picture, i;
 	input = document.getElementById('search');
 	filter = input.value.toUpperCase();
-	users = $(".projects");
-	user = $(".projects div");
+	projects = $(".projects");
+	project = $(".projects div");
 
-	// Loop through all user(s) and hide those who dont match the search query
-	for (i = 0; i < user.length; i++) {
-    const boxText0 = user[i].getElementsByTagName("p")[0];
-		const boxText1 = user[i].getElementsByTagName("p")[1];
+	// Loop through all project(s) and hide those who dont match the search query
+	for (i = 0; i < project.length; i++) {
+    const boxText0 = project[i].getElementsByTagName("p")[0];
+		const boxText1 = project[i].getElementsByTagName("p")[1];
 		if (boxText1) {
 			if (boxText1.innerHTML.toUpperCase().indexOf(filter) > -1) {
-				user[i].style.display = "";
+				project[i].style.display = "";
 			} else if (boxText0.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        user[i].style.display = "";
+        project[i].style.display = "";
       } else {
-				user[i].style.display = "none";
+				project[i].style.display = "none";
 			}
 		}
   }
