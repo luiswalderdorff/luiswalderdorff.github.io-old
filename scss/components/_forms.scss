@@ -2,4 +2,11 @@
   border: black 0px solid;
   border-radius: 10px;
   padding: 4px 10px;
+  width: 80%;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 25%;
+  }
 }

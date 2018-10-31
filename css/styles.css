@@ -59,7 +59,14 @@ nav a {
 #search {
   border: black 0px solid;
   border-radius: 10px;
-  padding: 4px 10px; }
+  padding: 4px 10px;
+  width: 80%; }
+  @media (min-width: 768px) {
+    #search {
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    #search {
+      width: 25%; } }
 
 .first-line {
   -webkit-box-align: center;
