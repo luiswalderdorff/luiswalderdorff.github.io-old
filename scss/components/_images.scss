@@ -16,13 +16,12 @@
   box-shadow: 0 8px 6px -6px black;
 }
 
-// .profile-pic,
-// .project-images {
-//   filter: saturate(50%);
-//   transition: filter 1s;
-// }
-//
-// .profile-pic:hover,
-// .project-images:hover {
-//   filter: saturate(120%);
-// }
+.profile-pic,
+.project-images {
+  filter: saturate(50%);
+  transition: filter 1s;
+}
+.profile-pic:hover,
+.project-images:hover {
+  filter: saturate(120%);
+}

@@ -1,0 +1,30 @@
+.profile-pic {
+  border-radius: 50%;
+  width: 70%;
+  margin: 0 auto; }
+
+.projects img {
+  width: 100%;
+  display: block;
+  margin: 0 auto; }
+
+.project-images {
+  border-radius: 5px;
+  border: 1px grey solid;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; }
+
+.profile-pic,
+.project-images {
+  -webkit-filter: saturate(50%);
+  filter: saturate(50%);
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  -o-transition: filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s; }
+
+.profile-pic:hover,
+.project-images:hover {
+  -webkit-filter: saturate(120%);
+  filter: saturate(120%); }
